@@ -13,7 +13,7 @@ if ($result === false) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Blog</title>
+    <title>All Blogs - Travel Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,13 +27,8 @@ if ($result === false) {
                 </ul>
             </nav>
         </header>
-        <div class="intro">
-            <h1>Welcome to the Travel Blog</h1>
-            <button class="new-post-button">Add New Post</button>
-            <a href="#blogs" class="read-more">Read Blog Posts</a>
-        </div>
-        <div class="blogs" id="blogs">
-            <h1>All Posts</h1>
+        <div class="blogs">
+            <h1>All Blog Posts</h1>
             <?php
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -53,28 +48,6 @@ if ($result === false) {
             $conn->close();
             ?>
         </div>
-
-        <!-- New Post Form -->
-        <div class="new-post-form" id="new-post-form">
-            <form action="posts/create.php" method="POST">
-                <h2>New Post</h2>
-                <input type="text" name="title" placeholder="Title" required>
-                <textarea name="description" placeholder="Description" required></textarea>
-                <textarea name="content" placeholder="Content" required></textarea>
-                <button type="submit">Create Post</button>
-                <button type="button" onclick="closeForm()">Cancel</button>
-            </form>
-        </div>
     </div>
-    
-    <script>
-        document.querySelector('.new-post-button').addEventListener('click', function() {
-            document.getElementById('new-post-form').style.display = 'block';
-        });
-
-        function closeForm() {
-            document.getElementById('new-post-form').style.display = 'none';
-        }
-    </script>
 </body>
 </html>

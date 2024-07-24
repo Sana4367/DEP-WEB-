@@ -82,12 +82,12 @@ nav ul li a {
 
 .blogs {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Optional: Add a background to improve readability */
+    background: rgba(255, 255, 255, 0.116); /* Optional: Add a background to improve readability */
     border-radius: 10px;
 }
 
 .blog-post {
-    background: white;
+    background: rgba(203, 202, 202, 0.676);
     margin: 20px 0;
     padding: 20px;
     border-radius: 5px;
