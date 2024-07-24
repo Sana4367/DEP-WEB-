@@ -29,7 +29,7 @@ $conn->close();
         <div class="intro">
             <h1>Welcome to the Travel Blog</h1>
             <button class="new-post-button">Add New Post</button>
-            <a href="index.php" class="read-more">Read Blog Posts</a>
+            <a href="#blogs" class="read-more">Read Blog Posts</a>
         </div>
         <div class="blogs" id="blogs">
             <h1>All Posts</h1>
