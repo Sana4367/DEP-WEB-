@@ -22,7 +22,7 @@ $conn->close();
             <nav>
                 <ul>
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="index.php">Blogs</a></li>
+                    <li><a href="../2nd task/blogs.php">Blogs</a></li>
                 </ul>
             </nav>
         </header>
