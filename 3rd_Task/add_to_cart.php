@@ -40,6 +40,7 @@ if ($product) {
     } else {
         $_SESSION['cart'][] = $cart_item;
     }
+    echo '<script>alert("Product has been added to the cart!");</script>';
 }
 
 header("Location: cart.php");
