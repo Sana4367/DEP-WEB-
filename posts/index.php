@@ -21,7 +21,7 @@ $conn->close();
             <div class="logo"><b>Travel Blog</b></div>
             <nav>
                 <ul>
-                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../2nd task/index.php">Home</a></li>
                     <li><a href="../2nd task/blogs.php">Blogs</a></li>
                 </ul>
             </nav>
